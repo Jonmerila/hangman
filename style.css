@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Nova+Square&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,900;6..12,1000&family=Roboto+Mono&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  background: lightblue;
+  height: 100vh;
+}
+
+.container {
+  background: white;
+}
+
+.game-box {
+  min-width: 200px;
+}
+.game-box .guesses-text b {
+  color: red;
+  font-size: 24px;
+}
+
+.word-display .letter {
+  width: 32px;
+  text-transform: uppercase;
+  font-size: 32px;
+  text-align: center;
+  border-bottom: 2px solid #000;
+}
+.word-display .letter.guessed {
+  border-color: transparent;
+}
+
+:where(.game-model, .keyboard) button {
+  text-transform: uppercase;
+  padding: 6px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: rgb(50, 92, 241);
+  color: white;
+}
+
+.keyboard button {
+  width: 30px;
+}
+.keyboard button:hover {
+  background-color: rgb(77, 113, 244);
+}
+.keyboard button:disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.game-model {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 9;
+}
+.game-model img {
+  max-width: 130px;
+}
+.game-model .content {
+  background: white;
+  max-width: 420px;
+  width: 100%;
+}
+.game-model p b {
+  color: rgb(50, 92, 241);
+}
+
+.game-model.show {
+  opacity: 1;
+  pointer-events: auto;
+}/*# sourceMappingURL=style.css.map */

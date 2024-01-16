@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="word-list.js" defer></script>
+    <script src="script.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body class="d-flex justify-content-center align-items-center">
+    <div class="game-model d-flex justify-content-center align-items-center">
+      <div class="content text-center rounded-3 p-3">
+        <img src="images/lost.gif" alt="Sad smiley" />
+        <h3>Game Over!</h3>
+        <p>The correct word was: <b>Rainbow</b></p>
+        <button class="play-agian">Play Agian</button>
+      </div>
+    </div>
+    <div
+      class="container col-12 d-flex flex-column py-5 text-center rounded-3 align-items-center gap-4 flex-md-row"
+    >
+      <div class="hangman-box">
+        <img src="/images/hangman-0.svg" alt="hangman-img" />
+        <h1>Hangman Game</h1>
+      </div>
+      <div class="game-box">
+        <ul
+          class="word-display d-flex gap-3 list-unstyled justify-content-center"
+        ></ul>
+        <h4 class="hint-text">
+          Hint:
+          <b>Lorem ipsum dolor sit amet.</b>
+        </h4>
+        <h4 class="guesses-text">
+          Incorrect guesses:
+          <b>0 / 6</b>
+        </h4>
+        <div class="keyboard d-flex gap-3 flex-wrap justify-content-center">
+          <!-- <button>A</button><button>B</button><button>C</button
+          ><button>D</button><button>E</button><button>F</button
+          ><button>G</button><button>H</button><button>I</button
+          ><button>J</button><button>K</button><button>L</button
+          ><button>M</button><button>N</button><button>O</button
+          ><button>P</button><button>Q</button><button>R</button
+          ><button>S</button><button>T</button><button>X</button
+          ><button>Y</button><button>Z</button> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
